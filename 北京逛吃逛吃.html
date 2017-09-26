@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+  <html>
+    <head>
+      <title>北京逛吃逛吃</title>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      
+      <link rel="stylesheet" href="file:////Users/fred/.atom/packages/markdown-preview-enhanced/node_modules/@shd101wyy/mume/dependencies/katex/katex.min.css">
+      
+
+      
+      
+      
+
+      <style> 
+      /**
+ * prism.js Github theme based on GitHub's theme.
+ * @author Sam Clarke
+ */
+code[class*="language-"],
+pre[class*="language-"] {
+  color: #333;
+  background: none;
+  font-family: Consolas, "Liberation Mono", Menlo, Courier, monospace;
+  text-align: left;
+  white-space: pre;
+  word-spacing: normal;
+  word-break: normal;
+  word-wrap: normal;
+  line-height: 1.4;
+
+  -moz-tab-size: 8;
+  -o-tab-size: 8;
+  tab-size: 8;
+
+  -webkit-hyphens: none;
+  -moz-hyphens: none;
+  -ms-hyphens: none;
+  hyphens: none;
+}
+
+/* Code blocks */
+pre[class*="language-"] {
+  padding: .8em;
+  overflow: auto;
+  /* border: 1px solid #ddd; */
+  border-radius: 3px;
+  /* background: #fff; */
+  background: #f5f5f5;
+}
+
+/* Inline code */
+:not(pre) > code[class*="language-"] {
+  padding: .1em;
+  border-radius: .3em;
+  white-space: normal;
+  background: #f5f5f5;
+}
+
+.token.comment,
+.token.blockquote {
+  color: #969896;
+}
+
+.token.cdata {
+  color: #183691;
+}
+
+.token.doctype,
+.token.punctuation,
+.token.variable,
+.token.macro.property {
+  color: #333;
+}
+
+.token.operator,
+.token.important,
+.token.keyword,
+.token.rule,
+.token.builtin {
+  color: #a71d5d;
+}
+
+.token.string,
+.token.url,
+.token.regex,
+.token.attr-value {
+  color: #183691;
+}
+
+.token.property,
+.token.number,
+.token.boolean,
+.token.entity,
+.token.atrule,
+.token.constant,
+.token.symbol,
+.token.command,
+.token.code {
+  color: #0086b3;
+}
+
+.token.tag,
+.token.selector,
+.token.prolog {
+  color: #63a35c;
+}
+
+.token.function,
+.token.namespace,
+.token.pseudo-element,
+.token.class,
+.token.class-name,
+.token.pseudo-class,
+.token.id,
+.token.url-reference .token.variable,
+.token.attr-name {
+  color: #795da3;
+}
+
+.token.entity {
+  cursor: help;
+}
+
+.token.title,
+.token.title .token.punctuation {
+  font-weight: bold;
+  color: #1d3e81;
+}
+
+.token.list {
+  color: #ed6a43;
+}
+
+.token.inserted {
+  background-color: #eaffea;
+  color: #55a532;
+}
+
+.token.deleted {
+  background-color: #ffecec;
+  color: #bd2c00;
+}
+
+.token.bold {
+  font-weight: bold;
+}
+
+.token.italic {
+  font-style: italic;
+}
+
+
+/* JSON */
+.language-json .token.property {
+  color: #183691;
+}
+
+.language-markup .token.tag .token.punctuation {
+  color: #333;
+}
+
+/* CSS */
+code.language-css,
+.language-css .token.function {
+  color: #0086b3;
+}
+
+/* YAML */
+.language-yaml .token.atrule {
+  color: #63a35c;
+}
+
+code.language-yaml {
+  color: #183691;
+}
+
+/* Ruby */
+.language-ruby .token.function {
+  color: #333;
+}
+
+/* Markdown */
+.language-markdown .token.url {
+  color: #795da3;
+}
+
+/* Makefile */
+.language-makefile .token.symbol {
+  color: #795da3;
+}
+
+.language-makefile .token.variable {
+  color: #183691;
+}
+
+.language-makefile .token.builtin {
+  color: #0086b3;
+}
+
+/* Bash */
+.language-bash .token.keyword {
+  color: #0086b3;
+}html body{font-family:"Helvetica Neue",Helvetica,"Segoe UI",Arial,freesans,sans-serif;font-size:16px;line-height:1.6;color:#333;background-color:#fff;overflow:initial;box-sizing:border-box;word-wrap:break-word}html body>:first-child{margin-top:0}html body h1,html body h2,html body h3,html body h4,html body h5,html body h6{line-height:1.2;margin-top:1em;margin-bottom:16px;color:#000}html body h1{font-size:2.25em;font-weight:300;padding-bottom:.3em}html body h2{font-size:1.75em;font-weight:400;padding-bottom:.3em}html body h3{font-size:1.5em;font-weight:500}html body h4{font-size:1.25em;font-weight:600}html body h5{font-size:1.1em;font-weight:600}html body h6{font-size:1em;font-weight:600}html body h1,html body h2,html body h3,html body h4,html body h5{font-weight:600}html body h5{font-size:1em}html body h6{color:#5c5c5c}html body strong{color:#000}html body del{color:#5c5c5c}html body a:not([href]){color:inherit;text-decoration:none}html body a{color:#08c;text-decoration:none}html body a:hover{color:#00a3f5;text-decoration:none}html body img{max-width:100%}html body>p{margin-top:0;margin-bottom:16px;word-wrap:break-word}html body>ul,html body>ol{margin-bottom:16px}html body ul,html body ol{padding-left:2em}html body ul.no-list,html body ol.no-list{padding:0;list-style-type:none}html body ul ul,html body ul ol,html body ol ol,html body ol ul{margin-top:0;margin-bottom:0}html body li{margin-bottom:0}html body li.task-list-item{list-style:none}html body li>p{margin-top:0;margin-bottom:0}html body .task-list-item-checkbox{margin:0 .2em .25em -1.8em;vertical-align:middle}html body .task-list-item-checkbox:hover{cursor:pointer}html body blockquote{margin:16px 0;font-size:inherit;padding:0 15px;color:#5c5c5c;border-left:4px solid #d6d6d6}html body blockquote>:first-child{margin-top:0}html body blockquote>:last-child{margin-bottom:0}html body hr{height:4px;margin:32px 0;background-color:#d6d6d6;border:0 none}html body table{margin:10px 0 15px 0;border-collapse:collapse;border-spacing:0;display:block;width:100%;overflow:auto;word-break:normal;word-break:keep-all}html body table th{font-weight:bold;color:#000}html body table td,html body table th{border:1px solid #d6d6d6;padding:6px 13px}html body dl{padding:0}html body dl dt{padding:0;margin-top:16px;font-size:1em;font-style:italic;font-weight:bold}html body dl dd{padding:0 16px;margin-bottom:16px}html body code{font-family:Menlo,Monaco,Consolas,'Courier New',monospace;font-size:.85em !important;color:#000;background-color:#f0f0f0;border-radius:3px;padding:.2em 0}html body code::before,html body code::after{letter-spacing:-0.2em;content:"\00a0"}html body pre>code{padding:0;margin:0;font-size:.85em !important;word-break:normal;white-space:pre;background:transparent;border:0}html body .highlight{margin-bottom:16px}html body .highlight pre,html body pre{padding:1em;overflow:auto;font-size:.85em !important;line-height:1.45;border:#d6d6d6;border-radius:3px}html body .highlight pre{margin-bottom:0;word-break:normal}html body pre code,html body pre tt{display:inline;max-width:initial;padding:0;margin:0;overflow:initial;line-height:inherit;word-wrap:normal;background-color:transparent;border:0}html body pre code:before,html body pre tt:before,html body pre code:after,html body pre tt:after{content:normal}html body p,html body blockquote,html body ul,html body ol,html body dl,html body pre{margin-top:0;margin-bottom:16px}html body kbd{color:#000;border:1px solid #d6d6d6;border-bottom:2px solid #c7c7c7;padding:2px 4px;background-color:#f0f0f0;border-radius:3px}@media print{html body{background-color:#fff}html body h1,html body h2,html body h3,html body h4,html body h5,html body h6{color:#000;page-break-after:avoid}html body blockquote{color:#5c5c5c}html body pre{page-break-inside:avoid}html body table{display:table}html body img{display:block;max-width:100%;max-height:100%}html body pre,html body code{word-wrap:break-word;white-space:pre}}.markdown-preview{width:100%;height:100%;box-sizing:border-box}.markdown-preview .pagebreak,.markdown-preview .newpage{page-break-before:always}.markdown-preview pre.line-numbers{position:relative;padding-left:3.8em;counter-reset:linenumber}.markdown-preview pre.line-numbers>code{position:relative}.markdown-preview pre.line-numbers .line-numbers-rows{position:absolute;pointer-events:none;top:1em;font-size:100%;left:0;width:3em;letter-spacing:-1px;border-right:1px solid #999;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none}.markdown-preview pre.line-numbers .line-numbers-rows>span{pointer-events:none;display:block;counter-increment:linenumber}.markdown-preview pre.line-numbers .line-numbers-rows>span:before{content:counter(linenumber);color:#999;display:block;padding-right:.8em;text-align:right}.markdown-preview .mathjax-exps .MathJax_Display{text-align:center !important}.markdown-preview:not([for="preview"]) .code-chunk .btn-group{display:none}.markdown-preview:not([for="preview"]) .code-chunk .status{display:none}.markdown-preview:not([for="preview"]) .code-chunk .output-div{margin-bottom:16px}.scrollbar-style::-webkit-scrollbar{width:8px}.scrollbar-style::-webkit-scrollbar-track{border-radius:10px;background-color:transparent}.scrollbar-style::-webkit-scrollbar-thumb{border-radius:5px;background-color:rgba(150,150,150,0.66);border:4px solid rgba(150,150,150,0.66);background-clip:content-box}html body[for="html-export"]{position:relative;width:100%;height:100%;top:0;left:0;margin:0;padding:0;overflow:auto}html body[for="html-export"] .markdown-preview:not([data-presentation-mode]){position:relative;top:0}@media screen and (min-width:914px){html body[for="html-export"] .markdown-preview:not([data-presentation-mode]){padding:2em calc(50% - 457px)}}@media screen and (max-width:914px){html body[for="html-export"] .markdown-preview:not([data-presentation-mode]){padding:2em}}@media screen and (max-width:450px){html body[for="html-export"] .markdown-preview:not([data-presentation-mode]){font-size:14px !important;padding:1em}}@media print{html body[for="html-export"] #sidebar-toc-btn{display:none}}html body[for="html-export"] #sidebar-toc-btn{position:fixed;bottom:8px;left:8px;font-size:28px;cursor:pointer;color:inherit;z-index:99;width:32px;text-align:center;opacity:.4}html body[for="html-export"][html-show-sidebar-toc] #sidebar-toc-btn{opacity:1}html body[for="html-export"][html-show-sidebar-toc] .md-sidebar-toc{position:fixed;top:0;left:0;width:300px;height:100%;padding:32px 0 48px 0;font-size:14px;box-shadow:0 0 4px rgba(150,150,150,0.33);box-sizing:border-box;overflow:auto;background-color:inherit}html body[for="html-export"][html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar{width:8px}html body[for="html-export"][html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar-track{border-radius:10px;background-color:transparent}html body[for="html-export"][html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar-thumb{border-radius:5px;background-color:rgba(150,150,150,0.66);border:4px solid rgba(150,150,150,0.66);background-clip:content-box}html body[for="html-export"][html-show-sidebar-toc] .md-sidebar-toc a{text-decoration:none}html body[for="html-export"][html-show-sidebar-toc] .md-sidebar-toc ul{padding:0 1.6em;margin-top:.8em}html body[for="html-export"][html-show-sidebar-toc] .md-sidebar-toc li{margin-bottom:.8em}html body[for="html-export"][html-show-sidebar-toc] .md-sidebar-toc ul{list-style-type:none}html body[for="html-export"][html-show-sidebar-toc] .markdown-preview{left:300px;width:calc(100% -  300px);padding:2em calc(50% - 457px -  150px);margin:0;box-sizing:border-box}@media screen and (max-width:1274px){html body[for="html-export"][html-show-sidebar-toc] .markdown-preview{padding:2em}}@media screen and (max-width:450px){html body[for="html-export"][html-show-sidebar-toc] .markdown-preview{width:100%}}html body[for="html-export"]:not([html-show-sidebar-toc]) .markdown-preview{left:50%;transform:translateX(-50%)}html body[for="html-export"]:not([html-show-sidebar-toc]) .md-sidebar-toc{display:none} 
+       
+      </style>
+    </head>
+    <body for="html-export">
+      <div class="mume markdown-preview   ">
+      <p>住宿: 建议住在三环内, 方便出行<br>
+景点:</p>
+<h3 class="mume-header" id="&#x4E00;-&#x4E2D;&#x8F74;&#x7EBF;&#x4E00;&#x65E5;&#x6E38;&#x8001;&#x5317;&#x4EAC;&#x4E00;&#x6E38;-&#x90E8;&#x5206;&#x5E1D;&#x5730;&#x6BB5;&#x4E0D;&#x5EFA;&#x8BAE;&#x5927;&#x578B;&#x8282;&#x5047;&#x65E5;&#x6E38;&#x89C8;">一. 中轴线一日游(老北京一游, 部分帝地段不建议大型节假日游览)</h3>
+
+<ol>
+<li>2号线到<strong>鼓楼大街</strong>, 沿旧鼓楼大街往南走, 到<strong>钟鼓楼</strong></li>
+<li>钟楼湾胡同出来绕道地安门大街, 走<strong>烟袋斜街</strong>到<strong>后海</strong>, 过<strong>银锭桥</strong></li>
+<li>沿前海边的小路一直走，从荷花市场的牌坊下走出来，到<strong>地安门</strong>。这会儿是吃早餐的点儿，<strong>地安门华天小吃</strong> 来碗豆汁儿配焦圈，吃不饱（惯）的话隔壁有KFC</li>
+<li>沿地安门内大街往南走到景山后街，往西再往南走到<strong>景山西门</strong>，花两块钱买张门票进去。爬到最高的万春亭上看清晨的紫禁城全貌。看够了就从东边山坡下来，到歪脖子树那儿怀念一下崇祯皇帝<a href="http://www.sohu.com/a/157800994_621720">Link</a>，读一读甲申三百年祭文。</li>
+</ol>
+<blockquote>
+<p>1644年3月19日, 李自成攻占北京城，崇祯皇帝吊死煤山, 明王朝覆灭<br>
+1944年3月19日, 郭沫若先生在《新华日报》上发表了《甲申三百年祭》,祭的是从当时上溯300年的甲申, 接着4月20日, 毛泽东在党的一次高级干部会议上说：“我党历史上曾有过几次表现了大的骄傲, 都是吃了亏的。全党同志对于这几次骄傲，几次错误，都要引为鉴戒。近日我们印了郭沫若论李自成的文章，也是叫同志们引为鉴戒。不要犯胜利时骄傲的错误。”不久, 党中央便把它列为整风文件, 成为延安及解放区全党及广大干部的必读书。</p>
+</blockquote>
+<ol start="5">
+<li>
+<p>从景山公园正门出来，马路对面就是故宫的神武门。<br>
+实在不建议花一两个小时走马观花转故宫，所以往沿着护城河往西边走，过了西北角楼，看过了白塔往南走，上<strong>北长街</strong>。</p>
+</li>
+<li>
+<p>到故宫<strong>西华门</strong>的时候向城楼方向前进，不用怕门口的警亭，咱又不是往里闯。</p>
+</li>
+<li>
+<p>当你走到离西华门的城楼仅100米时，会发现往右边（南）有一条很窄的路，能走汽车，也有沿河人行道。这条路是99%的外地游客都忽略的地方，旅行社更别提了。如果这时还没有过上午10点，基本上除了你就是巡逻的武警了</p>
+</li>
+<li>
+<p>走着走着就到了<strong>午门广场</strong>——故宫的正门。不是恶劣天气的话，应该游人如织了。站在最中间的砖道上，恭喜你，你现在又回到北京城的<strong>中轴线</strong>了。往南走，依次穿过端门(可能不开,从午门绕即可)、天安门这俩长得一模一样的亲兄弟，眼前就是雄伟的广场了。</p>
+</li>
+<li>
+<p><strong>纪念碑、纪念堂</strong> 什么的扫一眼就行了</p>
+</li>
+<li>
+<p>沿着中轴线继续走，穿过<strong>正阳门</strong>城楼，地上有一个<strong>中国公路里程原点</strong>的石碑，可以看看你家乡的方位和距离。</p>
+</li>
+<li>
+<p>从地下通道离开广场，穿过箭楼就到了传说中的<strong>前门大街</strong></p>
+</li>
+<li>
+<p>两边不伦不类的当代建筑没啥看的，你会发现右手边人潮汹涌，有个大铁门上书三个大字 <strong>“大栅栏”</strong>，往里进，随便走走可以发现同仁堂、内联升等老字号的门脸。小胡同里边小饭馆儿也多，可以用个午膳，歇歇脚</p>
+</li>
+<li>
+<p>吃完饭往胡同深处钻, 或者骑着共享单车往南去<strong>天坛</strong></p>
+</li>
+</ol>
+<blockquote>
+<p>天坛建议从天坛东门进(近5号线)</p>
+</blockquote>
+<h3 class="mume-header" id="&#x4E00;max-&#x4E2D;&#x8F74;&#x7EBF;&#x9644;&#x8FD1;&#x62C6;&#x5206;&#x5FEB;&#x901F;&#x6E38;">一MAX. 中轴线附近拆分快速游</h3>
+
+<p>建议直接地铁到天安门广场西/东或前门大街, 前门大街吃完饭, 由南往北游览</p>
+<h5 class="mume-header" id="1-&#x6BDB;&#x6CFD;&#x4E1C;&#x7EAA;&#x5FF5;&#x5802;">1. 毛泽东纪念堂</h5>
+
+<ul>
+<li>开放时间7:00-11:00<br>
+对, 就是这么短, 而且很可能因为节假日不开. 需要最严的安检, 建议由一个人放弃参观负责看包, 也可存放到东边的国博, 但是得提前存放, 队伍排上了就不好出来了</li>
+</ul>
+<h5 class="mume-header" id="2-&#x5929;&#x5B89;&#x95E8;&#x5E7F;&#x573A;&#x7EAA;&#x5FF5;&#x7891;">2. 天安门广场&amp;纪念碑</h5>
+
+<p>看看就成, 但是进入天安门广场范围都需要安检</p>
+<h5 class="mume-header" id="3-&#x56FD;&#x5BB6;&#x535A;&#x7269;&#x9986;">3. 国家博物馆</h5>
+
+<ul>
+<li>开放时间9:00-16:00<br>
+紧挨着天安门广场, 在正东边. 建议提前预约, 非节假日可不预约直接刷身份证, 同行的人较少时建议参观, 毕竟有着司母戊鼎和刘易斯棋子</li>
+</ul>
+<h5 class="mume-header" id="4-&#x4EBA;&#x6C11;&#x5927;&#x4F1A;&#x5802;">4. 人民大会堂</h5>
+
+<ul>
+<li>开放时间
+<ul>
+<li>1月、2月、3月、12月：9：00至14：00</li>
+<li>4月、5月、6月： 8：15至15：00</li>
+<li>7月、8月： 　7：30至16：00</li>
+<li>9月、10月、11月: 8：30至15：00<br>
+紧挨着天安门广场, 在正西边. 不是很建议看, 里面真的没啥。。。。</li>
+</ul>
+</li>
+</ul>
+<h5 class="mume-header" id="41-&#x56FD;&#x5BB6;&#x5927;&#x5267;&#x9662;&#x4FD7;&#x79F0;&#x9E1F;&#x86CB;">4.1 国家大剧院(俗称鸟蛋)</h5>
+
+<p>在人民大会堂西边, 只能在外面看一看拍张照, 如果路过, 看一眼即可</p>
+<h5 class="mume-header" id="5-&#x5929;&#x5B89;&#x95E8;">5. 天安门</h5>
+
+<ul>
+<li>开放时间
+<ul>
+<li>淡季（11月-次年2月）：8:30-16:30，16:00停止售票</li>
+<li>旺季（3月-10月）：8:30-17:00，16:30停止售票</li>
+<li>天安门广场开放时间：5:00-22:00<br>
+推荐上城楼一看</li>
+</ul>
+</li>
+</ul>
+<h5 class="mume-header" id="6-&#x6545;&#x5BAB;&#x5468;&#x4E00;&#x53EF;&#x80FD;&#x95ED;&#x9986;">6. 故宫(周一可能闭馆！！！)</h5>
+
+<ul>
+<li>开放时间
+<ul>
+<li>
+<p>除7.8月, 其余全部 <strong>周一闭馆, 周一闭馆, 周一闭馆</strong>!!!</p>
+</li>
+<li>
+<p>每年4月1日至10月31日采用旺季开放时间<br>
+开始售票、开放进馆时间：　　　8:30<br>
+止票时间（含钟表馆、珍宝馆）：16:00<br>
+停止入馆时间：　　　　　　　　16:10<br>
+清场时间：　　　　　　　　　　17:00</p>
+</li>
+<li>
+<p>每年11月1日至来年3月31日采用淡季开放时间<br>
+开始售票、开放进馆时间：　　　8:30<br>
+止票时间（含钟表馆、珍宝馆）：15:30<br>
+停止入馆时间：　　　　　　　　15:40<br>
+清场时间：　　　　　　　　　　16:30</p>
+</li>
+</ul>
+</li>
+<li>票价(业界良心)
+<ul>
+<li>淡季（11月1日－来年3月31日）：40元/人（不包括珍宝馆、钟表馆）</li>
+<li>旺季（4月1日－10月31日）：60元/人（不包括珍宝馆、钟表馆）</li>
+<li>珍宝馆、钟表馆须另购票：（不分淡、旺季）<br>
+虽然多数都是走马观花式的观看, 不是很推荐这种方式, 但是, 毕竟票价是全国经典的良心, 还是推荐一去的, 需提前预约</li>
+</ul>
+</li>
+</ul>
+<blockquote>
+<p>故宫里有一个逼格max的餐厅, 故宫冰窖, 具体请百度, 大概的介绍是需要提前一天预约, 且只在中午营业, 不做晚餐, 需等待一个小时, 不提供免费水, 价格比外面的饭店贵一倍. 不过师傅是名厨</p>
+</blockquote>
+<p>从故宫出来, 由三个选择,</p>
+<ul>
+<li>正北的景山公园,</li>
+<li>西边的北海公园, 西什库教堂</li>
+<li>东边的王府井. 以及北边景山后面的后海和南锣鼓巷以及恭王府</li>
+</ul>
+<h5 class="mume-header" id="9-&#x666F;&#x5C71;&#x516C;&#x56ED;">9. 景山公园</h5>
+
+<p>建议去, 歪脖树, 以及可以俯瞰故宫!</p>
+<h5 class="mume-header" id="10-&#x5317;&#x6D77;&#x516C;&#x56ED;">10. 北海公园</h5>
+
+<p>不是很建议, 不过可以看看白塔</p>
+<h5 class="mume-header" id="11-&#x897F;&#x4EC0;&#x5E93;&#x6559;&#x5802;">11. 西什库教堂</h5>
+
+<p>建议人少的时候去看看, 挨着北海公园西边</p>
+<h5 class="mume-header" id="12-&#x738B;&#x5E9C;&#x4E95;">12. 王府井</h5>
+
+<p>可以看看热闹...</p>
+<h5 class="mume-header" id="13-&#x540E;&#x6D77;">13. 后海</h5>
+
+<p>俗称酒吧一条街</p>
+<h5 class="mume-header" id="14-&#x5357;&#x9523;&#x9F13;&#x5DF7;">14. 南锣鼓巷</h5>
+
+<p>北京的夫子庙, 观前街, 宽窄巷子, 走马观花一看即可, 推荐尝试一下<strong>螺蛳粉</strong></p>
+<h5 class="mume-header" id="15-&#x5929;&#x575B;">15. 天坛</h5>
+
+<p>在南边比较远的地方, 一个天坛慢慢的走需要大半天, 建议5号线过去</p>
+<h5 class="mume-header" id="16-&#x606D;&#x738B;&#x5E9C;">16. 恭王府</h5>
+
+<p>和珅的老家, 建议一去, 毕竟富可敌国. 院子挺好看的</p>
+<h3 class="mume-header" id="&#x4E8C;-&#x4F5B;&#x5B54;&#x5E99;-&#x56FD;&#x5B50;&#x76D1;-&#x96CD;&#x548C;&#x5BAB;">二. 佛(孔庙, 国子监, 雍和宫)</h3>
+
+<p>5号线/2号线直达雍和宫站, 西南是国子监, 东南是雍和宫, 半天就可以逛完, 下午可以考虑同在5号线上的天坛</p>
+<h3 class="mume-header" id="&#x4E09;-&#x8FDC;&#x9014;-&#x957F;&#x57CE;-&#x5341;&#x4E09;&#x9675;">三. 远途: 长城-十三陵</h3>
+
+<p><s>虽然有S2线</s>, 但是基本别想抢到票. 老老实实坐公交把, 也就1个小时, <strong>但是, 但是, 但是,</strong> 一定要听清楚了!!!<br>
+<strong>地铁到积水潭站, 然后往东, 走到德胜门, 记住, 必须走到德胜门城楼北边的脚下, 紧挨着城楼</strong>, 路上听到的一切 <strong>公交车改线, 北京官方的一日游</strong>, 什么的, 全部都不要听, 不要停下, 只管到德胜门就行. 那里有6块的公交(还是4块来着, 不记得了, 反正不贵), 一个小时直达.<br>
+六块的公交, 一个小时直达,<br>
+六块的公交, 一个小时直达,<br>
+六块的公交, 一个小时直达<br>
+重要的事情说三遍.<br>
+上了车, <strong>别听那个大红色衣服的售票员推荐的滑车</strong>, 北京售票员是穿的蓝色的(至少我这大半年见到的都是), 就当听广告. 爬长城就是爬楼梯, 而且是可以休息的极慢速爬, 目前没见过谁喊累的, 而且人很多, 你想跑也跑不起来.<br>
+下了车, 别跟着去排那个队, 那是买滑车套票的, 直接顺着路标走, 要爬一小段儿, 大概15分钟才能到真正的售票处!!!<br>
+回来的时候在上车的地方等就好了.<br>
+<strong>建议带点儿吃的, 可以提前买好点北京小吃和面包火腿肠矿泉水背着, 虽然山上也不是特贵</strong></p>
+<ul>
+<li>如果还有想玩十三陵的想法(目前开了两个陵, 但是只建议去定陵, 我也只去过定陵), 在来长城时下车的地方等去十三陵的车子就成, 6块还是5块就可以了. 回家的时候也是选到德胜门的车子就成(百度地图就可以了)</li>
+</ul>
+<h3 class="mume-header" id="&#x56DB;-&#x7687;&#x5BB6;&#x56ED;&#x6797;-&#x9890;&#x548C;&#x56ED;-&#x5706;&#x660E;&#x56ED;">四. 皇家园林: 颐和园, 圆明园</h3>
+
+<p>这俩挨着, 地铁四号线北宫门站和圆明园站直达, 颐和园如果你拆开来慢慢慢慢走, 可以溜达一天, 但是多数都是半天搞定了, 其实里面经典非常多, 毕竟慈禧老人家避暑的地方.</p>
+<ul>
+<li>昆明湖, 佛香阁, 长廊, 铜亭, 苏州街, 石舫, 仁寿殿(慈禧居住的地方), 乐寿堂(李莲英居住的地方), 文昌阁, 十七孔桥, 龙王庙, 智慧海(洞内有1000多尊佛像)</li>
+</ul>
+<h3 class="mume-header" id="&#x4E94;-&#x5965;&#x4F53;">五. 奥体</h3>
+
+<p>8/15号线到奥体中心站, 没有特别的想法的话, 往南看了鸟巢和水立方就差不多了. 地铁站边上的地下商圈可以找到吃饭的地方</p>
+<h3 class="mume-header" id="&#x516D;-&#x5927;&#x5B66;&#x6E38;">六. 大学游</h3>
+
+<p>虽然地铁四号线直达北大东门, 但是不推荐.</p>
+<h3 class="mume-header" id="&#x4E03;-&#x6587;&#x827A;&#x8303;">七. 文艺范</h3>
+
+<p>798, 不过我没去过..</p>
+<h3 class="mume-header" id="&#x516B;-&#x5546;&#x4E1A;&#x8857;">八. 商业街</h3>
+
+<p>比较有特点的是芳草地吧, 我也没去过. 不过它对面是世贸天阶, 头顶超大的LED屏在当年还是比较有名的.(不过南京现在都有了)</p>
+<h3 class="mume-header" id="ps-&#x71D5;&#x4EAC;&#x516B;&#x666F;">PS: 燕京八景</h3>
+
+<p>蓟门烟树（西土城）、<br>
+卢沟晓月（卢沟桥）、<br>
+金台夕照（黄金台）、<br>
+琼岛春荫（北海）、<br>
+居庸叠翠（八达岭）、<br>
+太液秋风（中南海）、<br>
+玉泉趵突（玉泉山）、<br>
+西山晴雪（香山）</p>
+<h6 class="mume-header" id="&#x597D;&#x4E86;-&#x63A5;&#x4E0B;&#x6765;&#x662F;&#x559C;&#x95FB;&#x4E50;&#x89C1;&#x7684;&#x5403;&#x5403;&#x5403;&#x63A8;&#x8350;">好了, 接下来是喜闻乐见的吃吃吃推荐</h6>
+
+<h3 class="mume-header" id="&#x4E00;-&#x5404;&#x7701;&#x5E02;&#x9A7B;&#x4EAC;&#x529E;">一. 各省市驻京办</h3>
+
+<p>太多了....我去过俩, 新疆的和四川的. 比较推荐.</p>
+<h3 class="mume-header" id="&#x4E8C;-&#x70E4;&#x9E2D;">二. 烤鸭</h3>
+
+<p>讲真, 我觉得没南京的好吃...</p>
+<ol>
+<li>全聚德<br>
+极力不推荐, 除非你能报销, 只去过两家, 前门里的和天安门广场边的, 一只烤鸭300多, 分量大概够一个人勉强吃吃, 而且大厅还有30%还是40%的服务费, 真的是傻逼装逼才回去的地儿</li>
+<li>四季民福/大小董/大董/便宜坊<br>
+大董也不是很推荐, 便宜坊和小大董倒是可以了. 虽然这四家里我只去过四季民福</li>
+</ol>
+<h3 class="mume-header" id="&#x4E09;-&#x8FDE;&#x9501;">三. 连锁</h3>
+
+<ol>
+<li>局气<br>
+比较推荐, 价位好和花样多</li>
+<li>东来顺<br>
+有某人光环的火锅店, 锅是那种有个小烟囱的锅, 比较喜欢</li>
+<li>云海肴<br>
+他们家自己酿的米酒和菌菇好吃</li>
+<li>其实还有很多, 一时半会想不起来了</li>
+</ol>
+<h3 class="mume-header" id="&#x56DB;-&#x5C0F;&#x4F17;">四. 小众</h3>
+
+<p>都是些我去过, 但是不出名的地儿</p>
+<ol>
+<li>老奶奶私房菜, 在后海的巷子深处</li>
+<li>胶东小海鲜, 鼓楼西大街, 价格实在的海鲜. 而且我这种肠胃不好的吃完居然没事儿..</li>
+</ol>
+
+      </div>
+      <div class="md-sidebar-toc"><ul>
+<li><a href="#%E4%B8%80-%E4%B8%AD%E8%BD%B4%E7%BA%BF%E4%B8%80%E6%97%A5%E6%B8%B8%E8%80%81%E5%8C%97%E4%BA%AC%E4%B8%80%E6%B8%B8-%E9%83%A8%E5%88%86%E5%B8%9D%E5%9C%B0%E6%AE%B5%E4%B8%8D%E5%BB%BA%E8%AE%AE%E5%A4%A7%E5%9E%8B%E8%8A%82%E5%81%87%E6%97%A5%E6%B8%B8%E8%A7%88">一. 中轴线一日游(老北京一游, 部分帝地段不建议大型节假日游览)</a></li>
+<li><a href="#%E4%B8%80max-%E4%B8%AD%E8%BD%B4%E7%BA%BF%E9%99%84%E8%BF%91%E6%8B%86%E5%88%86%E5%BF%AB%E9%80%9F%E6%B8%B8">一MAX. 中轴线附近拆分快速游</a><br>
+* <a href="#1-%E6%AF%9B%E6%B3%BD%E4%B8%9C%E7%BA%AA%E5%BF%B5%E5%A0%82">1. 毛泽东纪念堂</a><br>
+* <a href="#2-%E5%A4%A9%E5%AE%89%E9%97%A8%E5%B9%BF%E5%9C%BA%E7%BA%AA%E5%BF%B5%E7%A2%91">2. 天安门广场&amp;纪念碑</a><br>
+* <a href="#3-%E5%9B%BD%E5%AE%B6%E5%8D%9A%E7%89%A9%E9%A6%86">3. 国家博物馆</a><br>
+* <a href="#4-%E4%BA%BA%E6%B0%91%E5%A4%A7%E4%BC%9A%E5%A0%82">4. 人民大会堂</a><br>
+* <a href="#41-%E5%9B%BD%E5%AE%B6%E5%A4%A7%E5%89%A7%E9%99%A2%E4%BF%97%E7%A7%B0%E9%B8%9F%E8%9B%8B">4.1 国家大剧院(俗称鸟蛋)</a><br>
+* <a href="#5-%E5%A4%A9%E5%AE%89%E9%97%A8">5. 天安门</a><br>
+* <a href="#6-%E6%95%85%E5%AE%AB%E5%91%A8%E4%B8%80%E5%8F%AF%E8%83%BD%E9%97%AD%E9%A6%86">6. 故宫(周一可能闭馆！！！)</a><br>
+* <a href="#9-%E6%99%AF%E5%B1%B1%E5%85%AC%E5%9B%AD">9. 景山公园</a><br>
+* <a href="#10-%E5%8C%97%E6%B5%B7%E5%85%AC%E5%9B%AD">10. 北海公园</a><br>
+* <a href="#11-%E8%A5%BF%E4%BB%80%E5%BA%93%E6%95%99%E5%A0%82">11. 西什库教堂</a><br>
+* <a href="#12-%E7%8E%8B%E5%BA%9C%E4%BA%95">12. 王府井</a><br>
+* <a href="#13-%E5%90%8E%E6%B5%B7">13. 后海</a><br>
+* <a href="#14-%E5%8D%97%E9%94%A3%E9%BC%93%E5%B7%B7">14. 南锣鼓巷</a><br>
+* <a href="#15-%E5%A4%A9%E5%9D%9B">15. 天坛</a><br>
+* <a href="#16-%E6%81%AD%E7%8E%8B%E5%BA%9C">16. 恭王府</a></li>
+<li><a href="#%E4%BA%8C-%E4%BD%9B%E5%AD%94%E5%BA%99-%E5%9B%BD%E5%AD%90%E7%9B%91-%E9%9B%8D%E5%92%8C%E5%AE%AB">二. 佛(孔庙, 国子监, 雍和宫)</a></li>
+<li><a href="#%E4%B8%89-%E8%BF%9C%E9%80%94-%E9%95%BF%E5%9F%8E-%E5%8D%81%E4%B8%89%E9%99%B5">三. 远途: 长城-十三陵</a></li>
+<li><a href="#%E5%9B%9B-%E7%9A%87%E5%AE%B6%E5%9B%AD%E6%9E%97-%E9%A2%90%E5%92%8C%E5%9B%AD-%E5%9C%86%E6%98%8E%E5%9B%AD">四. 皇家园林: 颐和园, 圆明园</a></li>
+<li><a href="#%E4%BA%94-%E5%A5%A5%E4%BD%93">五. 奥体</a></li>
+<li><a href="#%E5%85%AD-%E5%A4%A7%E5%AD%A6%E6%B8%B8">六. 大学游</a></li>
+<li><a href="#%E4%B8%83-%E6%96%87%E8%89%BA%E8%8C%83">七. 文艺范</a></li>
+<li><a href="#%E5%85%AB-%E5%95%86%E4%B8%9A%E8%A1%97">八. 商业街</a></li>
+<li><a href="#ps-%E7%87%95%E4%BA%AC%E5%85%AB%E6%99%AF">PS: 燕京八景</a><br>
+* <a href="#%E5%A5%BD%E4%BA%86-%E6%8E%A5%E4%B8%8B%E6%9D%A5%E6%98%AF%E5%96%9C%E9%97%BB%E4%B9%90%E8%A7%81%E7%9A%84%E5%90%83%E5%90%83%E5%90%83%E6%8E%A8%E8%8D%90">好了, 接下来是喜闻乐见的吃吃吃推荐</a></li>
+<li><a href="#%E4%B8%80-%E5%90%84%E7%9C%81%E5%B8%82%E9%A9%BB%E4%BA%AC%E5%8A%9E">一. 各省市驻京办</a></li>
+<li><a href="#%E4%BA%8C-%E7%83%A4%E9%B8%AD">二. 烤鸭</a></li>
+<li><a href="#%E4%B8%89-%E8%BF%9E%E9%94%81">三. 连锁</a></li>
+<li><a href="#%E5%9B%9B-%E5%B0%8F%E4%BC%97">四. 小众</a></li>
+</ul>
+</div>
+      <a id="sidebar-toc-btn">≡</a>
+    </body>
+    
+    
+    
+    <script>
+(function bindTaskListEvent() {
+  var taskListItemCheckboxes = document.body.getElementsByClassName('task-list-item-checkbox')
+  for (var i = 0; i < taskListItemCheckboxes.length; i++) {
+    var checkbox = taskListItemCheckboxes[i]
+    var li = checkbox.parentElement
+    if (li.tagName !== 'LI') li = li.parentElement
+    if (li.tagName === 'LI') {
+      li.classList.add('task-list-item')
+    }
+  }
+}())    
+</script>
+    
+<script>
+
+var sidebarTOCBtn = document.getElementById('sidebar-toc-btn')
+sidebarTOCBtn.addEventListener('click', function(event) {
+  event.stopPropagation()
+  if (document.body.hasAttribute('html-show-sidebar-toc')) {
+    document.body.removeAttribute('html-show-sidebar-toc')
+  } else {
+    document.body.setAttribute('html-show-sidebar-toc', true)
+  }
+})
+</script>
+      
+  </html>
